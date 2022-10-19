@@ -1,0 +1,194 @@
+:root{
+  --primary: #D56F3E;
+  --secondary: #3C787E;
+  --accent: #F1A208;
+  --black: #252422;
+  --white: #FFFCF2; 
+  --red: #F24333;
+  --green: #40ff00; 
+}
+body{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: var(--black);
+}
+.App {
+  text-align: center;
+}
+.toDoMainHeader{
+  position: relative;
+  top: 20px;
+}
+.listItemSubHeaderDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.completeDelete{
+  display: flex;
+  gap: 35px;
+}
+.toDoWhole{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--black);
+  border-radius: 8px 8px 0 0;
+  padding-bottom: 40px;
+  color: var(--white);
+}
+.toDoWhole input{
+  height: 30px;
+  width: 30%;
+  border-radius: 8px;
+  border: solid 1px;
+  padding: 5px;
+  font-size: large;
+}
+input:focus { 
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 5px var(--black);
+}
+.toDoItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;  
+  margin-bottom: 10px;
+}
+.listItemDiv{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 5px;
+}
+.listDo{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  flex-wrap: wrap;
+}
+.listCheckCross{
+  display: flex;
+  gap: 30px;
+}
+.listItemA{
+  color: var(--white);
+}
+.listItemB{
+  font-size: 20px;
+  position: relative;
+  bottom: 3px;
+}
+.fa-check{
+  color: var(--secondary);
+  border: solid 2px transparent;
+  border-radius: 50%;
+  padding: 10px;
+}
+.fa-x{ 
+  color: var(--accent);
+  border: solid 2px transparent;
+  border-radius: 50%;
+  padding: 10px 14px;
+}
+.fa-check:hover{
+  color: var(--green);
+  border: solid 2px var(--green);
+  border-radius: 40%;
+  background-color: var(--black);
+}
+.fa-x:hover{ 
+  color: var(--red);
+  border: solid 2px var(--red);
+  border-radius: 40%;
+  background-color: var(--black);
+}  
+.completeDiv{
+  background-color: var(--black);
+  border-radius: 0 0 8px 8px;
+}
+.completed{
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+.completedListItem{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.completeHeader{
+  margin-top: 0;
+  color: var(--white);
+  border-top: solid 10px var(--primary);
+  padding-top: 20px;
+}
+.completeCircle{
+  position: relative;
+  top: 3px;
+}
+.completeOrder{
+  font-size: medium;
+}
+.listText{
+  font-size: larger;
+}
+.addItemBtn{
+  background-color: var(--primary);
+  padding: 10px;
+  border: solid 2px transparent;
+  border-radius: 8px;
+  font-size: large;
+  color: var(--white);
+}
+.addItemBtn:hover{
+  background-color: var(--white);
+  border: solid 2px var(--primary);
+  color: black;
+  transition: all .3s;
+}
+.clearCompleteBtn{
+  background-color: var(--secondary);
+  padding: 10px;
+  border: solid 2px transparent;
+  border-radius: 8px;
+  font-size: large;
+  color: var(--white);
+}
+.clearCompleteBtn:hover{
+  background-color: var(--white);
+  border: solid 2px var(--secondary);
+  color: black;
+  transition: all .3s;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.displayNone{
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body{
+    background-color: var(--black);
+  }
+  .listDo{
+    width: 90%;
+  }
+  .toDoWhole input{
+    width: 90%;
+  }
+  .listText{
+    font-size: 22px;
+  }
+  .listItemSubHeaderDiv{
+    width: 90%;
+  }
+}
